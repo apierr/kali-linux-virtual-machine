@@ -20,5 +20,6 @@ sudo apt-get update && sudo apt-get install firmware-atheros
 
 ### Start SSH automatically on boot
 ```bash
-sudo apt-get update && sudo apt-get install firmware-atheros
+sudo systemctl enable ssh
 ```
+
