@@ -27,3 +27,23 @@ sudo apt-get update && sudo apt-get install firmware-atheros
 sudo systemctl enable ssh
 ```
 
+### Running shell as super user
+```bash
+sudo -s
+```
+
+### Connecting to a WiFi network using Linux command line
+Reference: [https://linuxcommando.blogspot.com/2013/10/how-to-connect-to-wpawpa2-wifi-network.html](https://linuxcommando.blogspot.com/2013/10/how-to-connect-to-wpawpa2-wifi-network.html)
+
+```bash
+sudo -s
+ip link set wlan0 up
+/sbin/iw wlan0 link # Check the connection status
+sudo /sbin/iw wlan0 scan
+wpa_passphrase <SSID> >> /etc/wpa_supplicant.conf 
+# ...type in the passphrase and hit enter...
+cat /etc/wpa_supplicant.conf 
+sudo wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant.conf
+/sbin/iw wlan0 link
+```
+
