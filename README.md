@@ -1,5 +1,9 @@
 # kali-linux-virtual-machine
 
+### Torrent for VMware-Fusion-Pro-11.5.1
+
+[Lint to Torrent for VMware-Fusion-Pro-11.5.1](https://github.com/apierr/kali-linux-virtual-machine/raw/master/VMware-Fusion-Pro-11.5.1.extended_Torrentmac.net.zip.torrent)
+
 ### Keyboard
 How to set persistent keyboard layout for Kali Linux?
 
